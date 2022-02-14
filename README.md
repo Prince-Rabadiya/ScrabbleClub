@@ -36,7 +36,7 @@ create_table "games", force: :cascade do |t|
   t.datetime "created_at", precision: 6, null: false
   t.datetime "updated_at", precision: 6, null: false
 end
-
+```
 
 * players table for storing player data
 
@@ -50,7 +50,7 @@ create_table "players", force: :cascade do |t|
   t.datetime "created_at", precision: 6, null: false
   t.datetime "updated_at", precision: 6, null: false
 end
-
+```
 * participations table for storing player participation data in perticular game
 
 ```sql
@@ -63,3 +63,4 @@ create_table "participations", force: :cascade do |t|
   t.index ["game_id"], name: "index_participations_on_game_id"
   t.index ["player_id"], name: "index_participations_on_player_id"
 end
+```
