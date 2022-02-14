@@ -19,6 +19,12 @@ application up and running.
 git clone https://github.com/Prince-Rabadiya/ScrabbleClub.git
 ```
 ```
+git fetch
+```
+```
+git checkout master
+```
+```
 bundle
 ```
 ```
