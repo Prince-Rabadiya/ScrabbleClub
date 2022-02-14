@@ -1,0 +1,28 @@
+%h5 Game Data
+.row
+  .col-md-2 Name: 
+  .col-md-2= @game.name
+.row 
+  .col-md-2 Description:
+  .col-md-2= @game.description
+.row
+  .col-md-2 Start at:
+  .col-md-2= @game.start_at
+.row
+  .col-md-2 End at:
+  .col-md-2= @game.end_at
+
+%br
+%h5 Player Data
+- @player_details.each_with_index do |player_info, i|
+  .row
+    .col-md-2 Player#{i + 1} name:
+    .col-md-2= player_info[0]
+  .row
+    .col-md-2 Player#{i + 1} score:
+    .col-md-2= player_info[1]
+
+- if @winner.present?
+  %b Winner is #{@winner.name}
+- else
+  %b Game is draw

@@ -1,0 +1,15 @@
+= simple_form_for @game do |f|
+  = f.input :name
+  = f.input :description
+  = f.input :start_at
+  = f.input :end_at
+
+  %br
+  %h5 Select 2 players
+  = f.fields_for :participations do |p|
+    = p.input :player_id, collection: Player.all
+    = p.input :score, integer: true
+
+  %br
+  %br
+  = f.submit

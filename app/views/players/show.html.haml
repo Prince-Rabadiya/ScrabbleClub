@@ -1,0 +1,38 @@
+%h5 Player Data
+.row 
+  .col-md-2 Name:
+  .col-md-2= @player.name
+
+.row 
+  .col-md-2 Age:
+  .col-md-2= @player.age
+
+.row 
+  .col-md-2 Joining Date:
+  .col-md-2= @player.joining_date
+
+.row 
+  .col-md-2 Contact No:
+  .col-md-2= @player.contact_number
+
+.row
+  .col-md-2 Email:
+  .col-md-2= @player.email
+
+%br
+%h5 Played Game Data
+.row 
+  .col-md-2 Number of wins:
+  .col-md-2= @wins
+
+.row
+  .col-md-2 Number of losses:
+  .col-md-2= @losses
+
+.row
+  .col-md-2 Average score:
+  .col-md-2= @avg_score.present? ? @avg_score : '-'
+
+.row
+  .col-md-2 Highest score:
+  .col-md-2= @highest_score || '-'

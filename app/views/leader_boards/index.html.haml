@@ -1,0 +1,18 @@
+%h5 Leader Board
+%table{class: 'table'}
+  %thead
+    %th{scope: 'col'}
+      Player Name
+    %th{scope: 'col'}
+      Games Played
+    %th{scope: 'col'}
+      Avg Score
+  %tbody
+    - @leader_board_players.map do |player, details|
+      %tr
+        %td
+          = player.name
+        %td
+          = details[0]
+        %td
+          = details[1]

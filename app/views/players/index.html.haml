@@ -1,0 +1,31 @@
+%h5 Players
+%table{class: 'table'}
+  %thead
+    %th{scope: 'col'} Name
+    %th{scope: 'col'} Age
+    %th{scope: 'col'} Joining Date
+    %th{scope: 'col'} Contact No
+    %th{scope: 'col'} Email
+    %th{colspan: '3', scope: 'col'}Actions
+
+  %tbody
+    - @players.each do |player|
+      %tr
+        %td
+          = player.name
+        %td
+          = player.age
+        %td
+          = player.joining_date
+        %td
+          = player.contact_number
+        %td
+          = player.email
+        %td
+          = link_to :show, player
+        %td
+          = link_to :edit, edit_player_path(player.id)
+        %td
+          = link_to :destroy, player, method: :delete, data: { confirm: 'Are you sure?' }
+        
+= link_to 'Create Player', new_player_path
