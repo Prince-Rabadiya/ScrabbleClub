@@ -15,14 +15,19 @@ application up and running.
 
 ## Installation
 
-```git clone https://github.com/Prince-Rabadiya/ScrabbleClub.git
-
-```bundle
-
-```rails db:create db:migrate db:seed
-
-Go ahead and start rails server
-
+```
+git clone https://github.com/Prince-Rabadiya/ScrabbleClub.git
+```
+```
+bundle
+```
+```
+rails db:create db:migrate db:seed
+```
+Go ahead and start 
+```
+rails server
+```
 ## Database Schema
 
 * games table for storing game data
