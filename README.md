@@ -10,16 +10,16 @@ application up and running.
 
 ## Requirements
 
-Ruby 2.6.6
-Rails 6.1.4
+* Ruby 2.6.6
+* Rails 6.1.4
 
 ## Installation
 
-git clone https://github.com/Prince-Rabadiya/ScrabbleClub.git
+```git clone https://github.com/Prince-Rabadiya/ScrabbleClub.git
 
-bundle
+```bundle
 
-rails db:create db:migrate db:seed
+```rails db:create db:migrate db:seed
 
 Go ahead and start rails server
 
