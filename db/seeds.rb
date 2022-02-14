@@ -8,5 +8,5 @@
 
 20.times do |i|
   contact_filler = i < 10 ? '000000000' : '00000000'
-  Player.create(name: "player#{i}", age: 25, joining_date: Date.today, contact_number: contact_filler + i, email: "email#{i}@co.co")
+  Player.create(name: "player#{i}", age: 25, joining_date: Date.today, contact_number: contact_filler + i.to_s, email: "email#{i}@co.co")
 end
